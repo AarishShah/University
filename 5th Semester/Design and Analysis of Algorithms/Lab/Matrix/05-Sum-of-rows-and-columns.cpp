@@ -1,4 +1,5 @@
-// Transpose of the matrix
+// comments ........ yay
+// Sum of row and columns of the matrix
 
 #include <iostream>
 using namespace std;
@@ -32,19 +33,10 @@ void display_array(int a[100][100], int r, int c)
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 }
 
-// Transpose of the matrix
-void transpose(int a[100][100], int r, int c)
+// Sum of rows of the matrix
+void fun()
 {
-    int transpose[100][100];
 
-    for (int rows = 0; rows < c; rows++) // changing the condition here to columns instead of rows
-    {
-        for (int columns = 0; columns < r; columns++) // changing the condition here to rows instead of columns
-        {
-            transpose[rows][columns] = a[columns][rows];
-        }
-    }
-    display_array(transpose, c, r);
 }
 
 int main()
@@ -64,6 +56,6 @@ int main()
     cout << "\nElements of the matrix: " << endl;
     display_array(a, r1, c1);
 
-    cout << "\nTranspose of the given matrix is: " << endl;
-    transpose(a, r1, c1);
+    cout << "\nSum of the rows of the given matrix is: " << endl;
+    
 }
