@@ -1,4 +1,3 @@
-// comments ........ yay
 // Sum of row and columns of the matrix
 
 #include <iostream>
