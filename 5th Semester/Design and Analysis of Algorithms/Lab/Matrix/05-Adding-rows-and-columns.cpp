@@ -63,10 +63,10 @@ void add_col(int a[100][100], int r, int c)
     }
     // adding columns, same as rows since I am transposing it.
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-    for (int rows = 0; rows < r; rows++)
+    for (int rows = 0; rows < c; rows++) // changing the condition here to columns instead of rows
     {
         int sum = 0;
-        for (int columns = 0; columns < c; columns++)
+        for (int columns = 0; columns < r; columns++) // changing the condition here to rows instead of columns
         {
             sum = sum + transpose[rows][columns];
         }
