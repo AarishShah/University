@@ -33,15 +33,24 @@ void display_array(int a[100][100], int r, int c)
 }
 
 // Transpose of the matrix
-void fun()
+void transpose(int a[100][100], int r, int c)
 {
-    
+    int transpose[100][100];
+
+    for (int rows = 0; rows < c; rows++) // changing the condition here to columns instead of rows
+    {
+        for (int columns = 0; columns < r; columns++) // changing the condition here to rows instead of columns
+        {
+            transpose[rows][columns] = a[columns][rows];
+        }
+    }
+    display_array(transpose, c, r);
 }
 
 int main()
 
 {
-    int a[100][100], b[100][100], c[100][100];
+    int a[100][100];
 
     int r1, c1, r2, c2;
 
@@ -55,6 +64,6 @@ int main()
     cout << "\nElements of the matrix: " << endl;
     display_array(a, r1, c1);
 
-
-
+    cout << "Trans: " << endl;
+    transpose(a, r1, c1);
 }
