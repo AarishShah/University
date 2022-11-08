@@ -18,7 +18,7 @@ void get_array(int a[100][100], int r, int c)
 // To display elements of 2-D array
 void display_array(int a[100][100], int r, int c)
 {
-    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 
     for (int rows = 0; rows < r; rows++)
     {
@@ -29,11 +29,28 @@ void display_array(int a[100][100], int r, int c)
         }
         cout << endl;
     }
-    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 }
-nmbhjfvghcv
-// Transpose of the matrix
- transpose(int a[100][100], int r, int c)
+
+// Sum of elements in a row i.e., adding the columns
+void add_row(int a[100][100], int r, int c)
+{
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+
+    for (int rows = 0; rows < r; rows++)
+    {
+        int sum = 0;
+        for (int columns = 0; columns < c; columns++)
+        {
+            sum = sum + a[rows][columns];
+        }
+        cout << "Sum of elements in row " << rows + 1 << ": " << sum << endl;
+    }
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+}
+
+// Sum of elements in a column i.e., adding the rows
+void add_col(int a[100][100], int r, int c)
 {
     int transpose[100][100];
 
@@ -44,35 +61,18 @@ nmbhjfvghcv
             transpose[rows][columns] = a[columns][rows];
         }
     }
-    return transpose;
-}
-
-// Sum of elements in rows i.e., adding the columns
-void add_row(int a[100][100], int r, int c)
-{
+    // adding columns
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
     for (int rows = 0; rows < r; rows++)
     {
         int sum = 0;
         for (int columns = 0; columns < c; columns++)
         {
-            sum = sum + a[rows][columns];
-        }
-        cout << "Sum of elements in row " << rows + 1 << ": " << sum << endl;
-    }
-}
-
-void add_col(int a[100][100], int r, int c)
-{
-    transpose(a, r1, c1);
-    for (int rows = 0; rows < r; rows++)
-    {
-        int sum = 0;
-        for (int columns = 0; columns < c; columns++)
-        {
-            sum = sum + a[rows][columns];
+            sum = sum + transpose[rows][columns];
         }
         cout << "Sum of elements in column " << rows + 1 << ": " << sum << endl;
     }
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 }
 
 int main()
@@ -91,7 +91,11 @@ int main()
 
     cout << "\nElements of the matrix: " << endl;
     display_array(a, r1, c1);
+    cout << endl;
 
     add_row(a, r1, c1);
+    cout << endl;
+
     add_col(a, r1, c1);
+    cout << endl;
 }
