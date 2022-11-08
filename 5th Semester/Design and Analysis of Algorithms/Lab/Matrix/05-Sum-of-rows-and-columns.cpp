@@ -1,4 +1,4 @@
-// Sum of row and columns of the matrix
+// Sum of rows and columns of the matrix
 
 #include <iostream>
 using namespace std;
@@ -31,11 +31,48 @@ void display_array(int a[100][100], int r, int c)
     }
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 }
-
-// Sum of rows of the matrix
-void fun()
+nmbhjfvghcv
+// Transpose of the matrix
+ transpose(int a[100][100], int r, int c)
 {
+    int transpose[100][100];
 
+    for (int rows = 0; rows < c; rows++) // changing the condition here to columns instead of rows
+    {
+        for (int columns = 0; columns < r; columns++) // changing the condition here to rows instead of columns
+        {
+            transpose[rows][columns] = a[columns][rows];
+        }
+    }
+    return transpose;
+}
+
+// Sum of elements in rows i.e., adding the columns
+void add_row(int a[100][100], int r, int c)
+{
+    for (int rows = 0; rows < r; rows++)
+    {
+        int sum = 0;
+        for (int columns = 0; columns < c; columns++)
+        {
+            sum = sum + a[rows][columns];
+        }
+        cout << "Sum of elements in row " << rows + 1 << ": " << sum << endl;
+    }
+}
+
+void add_col(int a[100][100], int r, int c)
+{
+    transpose(a, r1, c1);
+    for (int rows = 0; rows < r; rows++)
+    {
+        int sum = 0;
+        for (int columns = 0; columns < c; columns++)
+        {
+            sum = sum + a[rows][columns];
+        }
+        cout << "Sum of elements in column " << rows + 1 << ": " << sum << endl;
+    }
 }
 
 int main()
@@ -43,7 +80,7 @@ int main()
 {
     int a[100][100];
 
-    int r1, c1, r2, c2;
+    int r1, c1;
 
     cout << "Enter the number of rows in the array: ";
     cin >> r1;
@@ -55,6 +92,6 @@ int main()
     cout << "\nElements of the matrix: " << endl;
     display_array(a, r1, c1);
 
-    cout << "\nSum of the rows of the given matrix is: " << endl;
-    
+    add_row(a, r1, c1);
+    add_col(a, r1, c1);
 }
