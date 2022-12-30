@@ -1,0 +1,4 @@
+sum of diagonals
+binary search
+quick sort
+merge sort
