@@ -3,17 +3,17 @@ using namespace std;
 
 #define max 100
 
-int BinarySearch(int A[], int item, int lowerobund, int upperbound)
+int binarySearch(int A[], int item, int lb, int ub)
 {
-    int mid = (lowerobund + upperbound) / 2;
+    int mid = (lb + ub) / 2;
 
-    if (lowerobund <= upperbound)
+    if (lb <= ub)
     {
         if (item < A[mid])
-            return BinarySearch(A, item, lowerobund, mid - 1);
+            return binarySearch(A, item, lb, mid - 1);
 
         else if (item > A[mid])
-            return BinarySearch(A, item, mid + 1, upperbound);
+            return binarySearch(A, item, mid + 1, ub);
 
         else
             return mid;
@@ -36,10 +36,9 @@ int main()
     cout << "Enter the item to be searched:";
     cin >> item;
 
-    result = BinarySearch(A, item, 0, n - 1);
+    result = binarySearch(A, item, 0, n - 1);
     if (result == -1)
         cout << "Not found";
-
     else
         cout << "Found at " << result + 1 << " position";
 }
