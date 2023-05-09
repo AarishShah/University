@@ -34,7 +34,7 @@ void display_array(int a[100][100], int r, int c)
 
 void pdt(int a[100][100], int b[100][100], int r, int c, int c1)
 {
-    int pdt[100][100] = {0}; // initilised to zero, although this wasn't necessary in my compiler
+    int pdt[100][100] = {0}; // initilised to zero
 
     for (int rows = 0; rows < r; rows++)
     {
