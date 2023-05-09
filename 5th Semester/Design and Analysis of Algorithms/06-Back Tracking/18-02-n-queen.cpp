@@ -1,4 +1,4 @@
-// same as 109-01-n-queen.cpp, but with a different simple variable names
+// same as 109-01-n-queen.cpp, but with simple variable names
 
 #include <iostream>
 using namespace std;
