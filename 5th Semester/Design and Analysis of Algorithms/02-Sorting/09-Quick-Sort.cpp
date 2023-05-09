@@ -14,9 +14,10 @@ void quicksort(int arr[], int left, int right)
             i++;
         while (arr[j] > pivot)
             j--;
-            
+
         if (i <= j)
         {
+            swap(arr[i++], arr[j++]); // swap elements
             tmp = arr[i];
             arr[i] = arr[j];
             arr[j] = tmp;
