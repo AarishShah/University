@@ -23,7 +23,7 @@ set n1 [$ns node]
 #create a duplex link between the nodes
 $ns duplex-link $n0 $n1 1Mb 10ms DropTail
 
-#create a udp agent and attach it ti node n0
+#create a udp agent and attach it to node n0
 set udp0 [new Agent/UDP]
 $ns attach-agent $n0 $udp0
 

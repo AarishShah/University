@@ -20,7 +20,7 @@ set n2 [$ns node]
 set n3 [$ns node]
 
 $ns duplex-link $n0 $n2 1Mb 10ms DropTail
-$ns duplex-link $n1 $n2 1Mb 10ms DropTailz
+$ns duplex-link $n1 $n2 1Mb 10ms DropTail
 $ns duplex-link $n3 $n2 1Mb 10ms DropTail
 
 $ns duplex-link-op $n0 $n2 orient right-down
@@ -54,8 +54,8 @@ $ns connect $udp0 $null0
 $ns connect $udp1 $null0
 
 $ns at 0.5 "$cbr0 start"
-$ns at 1.5 "$cbr1 start"
-$ns at 4.5 "$cbr0 stop"
+$ns at 1.5 "$cbr1 "$cbr0 start"
+$ns at 4.5 stop"
 
 $ns at 5.0 "finish"
 $ns run
