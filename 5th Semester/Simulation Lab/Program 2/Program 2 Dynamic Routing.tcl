@@ -9,23 +9,23 @@ $ns namtrace-all $nf
 
 #Define a 'finish' procedure
 proc finish {} {
-global ns nf
-$ns flush-trace
-#close the trace file
-close $nf
-#Execute nam on the trace file
-exec nam out.nam &
-exit 0
+    global ns nf
+    $ns flush-trace
+    #close the trace file
+    close $nf
+    #Execute nam on the trace file
+    exec nam out.nam &
+    exit 0
 }
 
 #create seven nodes
 for {set i 0} {$i < 7} {incr i} {
-set n($i) [$ns node]
+    set n($i) [$ns node]
 }
 
 #create links between the nodes
 for {set i 0} {$i < 7} {incr i} {
-$ns duplex-link $n($i) $n([expr ($i+1)%7]) 1Mb 10ms DropTail
+    $ns duplex-link $n($i) $n([expr ($i+1)%7]) 1Mb 10ms DropTail
 }
 #create a UDP agent and attach it to node n(0)
 set udp0 [new Agent/UDP]
@@ -41,7 +41,7 @@ $cbr0 attach-agent $udp0
 set null0 [new Agent/Null]
 $ns attach-agent $n(3) $null0
 
-#connect the traffic source with the traffic sink 
+#connect the traffic source with the traffic sink
 $ns connect  $udp0 $null0
 
 #Schedule event for the CBR agent and the network dynamics

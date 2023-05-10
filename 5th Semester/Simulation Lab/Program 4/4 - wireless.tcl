@@ -49,93 +49,93 @@ set god_ [create-god $val(nn)]//to create god object
 
 $ns node-config –adhocRouting  $val(rp) \
 
--llType  $val(ll) \
+    -llType  $val(ll) \
 
--macType  $val(mac) \
+    -macType  $val(mac) \
 
--ifqType  $val(ifq) \
+    -ifqType  $val(ifq) \
 
--ifqLen  $val(ifqlen) \
+    -ifqLen  $val(ifqlen) \
 
--antType  $val(ant) \
+    -antType  $val(ant) \
 
--propType  $val(prop) \
+    -propType  $val(prop) \
 
--phyType  $val(netif) \
+    -phyType  $val(netif) \
 
--channelType  $val(chan) \
+    -channelType  $val(chan) \
 
--topoInstance  $topo \
+    -topoInstance  $topo \
 
--agentTrace  ON \
+    -agentTrace  ON \
 
--routerTrace  ON \
+    -routerTrace  ON \
 
--macTrace  OFF \
+    -macTrace  OFF \
 
--movementTrace  ON
+    -movementTrace  ON
 
 
 for {set i 0} {$i < $val(nn) } { incr i } {
 
-set node_($i) [$ns node]
+    set node_($i) [$ns node]
 
 }
 
 
 for {set i 0} {$i < $val(nn)} { incr i } {
 
-# 30 defines the node size for nam
+    # 30 defines the node size for nam
 
-$ns initial_node_pos $node_($i) 30
+    $ns initial_node_pos $node_($i) 30
 
 }
 
 
 proc destination {} {
 
-global ns val node_
+    global ns val node_
 
-set time 1.0
+    set time 1.0
 
-set now [$ns now]
+    set now [$ns now]
 
-for {set i 0} {$i<$val(nn)} {incr i} {
+    for {set i 0} {$i<$val(nn)} {incr i} {
 
-set xx [expr rand()*1600]
+        set xx [expr rand()*1600]
 
-set yy [expr rand()*800]
+        set yy [expr rand()*800]
 
-$ns at $now “$node_($i) setdest $xx $yy 1000.0”
+        $ns at $now “$node_($i) setdest $xx $yy 1000.0”
 
-}
+    }
 
-$ns at [expr $now+$time] “destination”
+    $ns at [expr $now+$time] “destination”
 
 }
 
 //To change node colors at the time of 1.0 , 2.0 , 3.0
 for {set i 0} {$i < $val(nn) } {incr i } {
 
-$node_($i) color yellow
+    $node_($i) color yellow
 
-$ns at 1.0 “$node_($i) color red”
-
-}
-
-for {set i 0} {$i < $val(nn) } {incr i } {
-
-$node_($i) color yellow
-
-$ns at 2.0 “$node_($i) color lightgreen”
+    $ns at 1.0 “$node_($i) color red”
 
 }
 
 for {set i 0} {$i < $val(nn) } {incr i } {
 
-$node_($i) color yellow
+    $node_($i) color yellow
 
-$ns at 3.0 “$node_($i) color orange”
+    $ns at 2.0 “$node_($i) color lightgreen”
+
+}
+
+for {set i 0} {$i < $val(nn) } {incr i } {
+
+    $node_($i) color yellow
+
+    $ns at 3.0 “$node_($i) color orange”
 
 }
 
@@ -149,17 +149,16 @@ $ns at 10.5 “puts \”end simulation\” ; $ns halt”
 // Execute the nam file
 proc stop {} {
 
-global ns tracefd namtrace
+    global ns tracefd namtrace
 
-$ns flush-trace
+    $ns flush-trace
 
-close $tracefd
+    close $tracefd
 
-close $namtrace
+    close $namtrace
 
-exec nam out.nam &
+    exec nam out.nam &
 
 }
 
 $ns run
-
