@@ -12,7 +12,7 @@ int main()
     {
         if (weight[i] <= capacity) // if item can be added to the knapsack
         {
-            x[i] = 1;
+            x[i] = 1; // the whole item is added to the knapsack
             capacity = capacity - weight[i]; // capacity of the knapsack is reduced by the weight of the item
         }
         else
