@@ -111,7 +111,7 @@ $ns run
 ```
 Finally, an event is scheduled to terminate the simulation at time 5.0 using the "at" method and the "finish" procedure is called, which flushes the trace information and closes the trace file, and then the nam visualization tool is launched to display the simulation trace. The "run" method is called to start the simulation.
 
-![Pasted image 20230510225251.png](https://github.com/AarishShah/University/blob/master/5th%20Semester/Simulation%20Lab/Project%201/Pasted%20image%2020230510225251.png)
+![](https://github.com/AarishShah/University/blob/master/5th%20Semester/Simulation%20Lab/Project%201/Pasted%20image%2020230510225251.png)
 
 Overall, this section of the code sets up a simple network topology with 4 nodes connected in a chain, and two CBR applications that send traffic from nodes n0 and n1 to node n3 via node n2. The traffic is routed using DropTail queues and the simulation is scheduled to run for 5 seconds.
 
