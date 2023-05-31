@@ -1,0 +1,1 @@
+// Write a program to print Full Pyramid of Numbers
