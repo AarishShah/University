@@ -42,5 +42,7 @@ class Tax
             tax += 0.3 * (income - 1000000);
         }
         System.out.println("Tax to be paid: " + tax);
+
+        sc.close(); // to close the scanner, to prevent memory leak
     }
 }
