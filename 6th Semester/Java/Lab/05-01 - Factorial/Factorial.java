@@ -17,6 +17,9 @@ public class Factorial
             fact = fact * i;
         }
         System.out.println(fact);
+
+        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+
         sc.close();
     }
 }
