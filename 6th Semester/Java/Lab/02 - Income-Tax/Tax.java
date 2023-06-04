@@ -1,4 +1,4 @@
-// Write a progrma that will calculate tax to be paid by an employee aas per the following rules:
+// Write a progrma that will calculate tax to be paid by an employee aa per the following rules:
 /*
 Income Range		        Tax Rate
 < 2,50,000			        0%
