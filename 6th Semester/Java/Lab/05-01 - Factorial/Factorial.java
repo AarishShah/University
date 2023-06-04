@@ -7,7 +7,7 @@ public class Factorial
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter numb er to find the factorial: ");
+        System.out.print("Enter number to find the factorial: ");
         int n = sc.nextInt();
 
         int fact = 1;
