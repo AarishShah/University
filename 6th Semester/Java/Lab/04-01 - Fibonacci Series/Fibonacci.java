@@ -34,6 +34,9 @@ public class Fibonacci
                 System.out.print(nextTerm + " ");
             }
         }
+
+        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+
         sc.close();
     }
 }

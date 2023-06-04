@@ -43,6 +43,8 @@ class Tax
         }
         System.out.println("Tax to be paid: " + tax);
 
+        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+
         sc.close(); // to close the scanner, to prevent memory leak
     }
 }

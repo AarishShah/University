@@ -14,6 +14,9 @@ class Table
         {
             System.out.println(a + " x " + i + " = " + (a * i));
         }
+
+        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+
         sc.close();
     }
 }
