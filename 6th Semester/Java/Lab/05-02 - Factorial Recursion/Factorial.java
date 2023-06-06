@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Fibonacci
+public class Factorial
 {
     static public int rec(int n)
     {
