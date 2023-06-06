@@ -1,5 +1,5 @@
-
 // Wrrite a program to print Half Inverted Pyramid of Stars
+
 import java.util.Scanner;
 
 public class HalfInvertedPyramid
