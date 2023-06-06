@@ -13,9 +13,9 @@ class Tax
 {
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in); // to take input from the user
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter your income: ");
-        double income = sc.nextDouble();
+        double income = sc.nextDouble();  // to take input from the user
 
         double tax = 0;
 
