@@ -20,7 +20,9 @@ public class PascalTriangle
                   coef = 1;
                else
                   coef = coef * (i - j + 1) / j;
-               System.out.printf("%4d", coef); // ask sir
+               // System.out.printf("%4d", coef); // ask sir
+               System.out.print("    " + coef); // Sir's answer
+
             }
             System.out.print("\n");
          }
