@@ -1,3 +1,5 @@
+// To display a string on the screen
+
 class HelloWorld
 {
    public static void main(String[] args)
