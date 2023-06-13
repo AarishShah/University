@@ -1,4 +1,4 @@
-// From notes in class
+// From notes in class. Program to demonstrate the concept of constructor overloading in Java.
 
 class Student
 {
