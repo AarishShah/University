@@ -27,5 +27,8 @@ class SixthSem extends Student
         SixthSem s1 = new SixthSem();
         s1.greet();
         s1.fn1();
+
+        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+
     }
 }

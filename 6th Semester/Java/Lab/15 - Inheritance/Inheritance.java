@@ -30,5 +30,8 @@ public class Inheritance
         d.a = 100;
         d.display();
         d.show();
+
+        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+
     }
 }
