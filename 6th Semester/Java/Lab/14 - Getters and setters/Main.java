@@ -1,4 +1,4 @@
-// From Abdul Bari's Udemy C++ Course. Program to demonstrate the concept of constructors in Java.
+// Same as program 11.
 
 class Rectangle
 {
