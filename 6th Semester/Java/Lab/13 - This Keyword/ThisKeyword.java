@@ -5,7 +5,7 @@ public class ThisKeyword
 
     public int fn(int a)
     {
-        this.a = a;  // this keyword is used to refer to the current object 'this.a' is the instance variable and a is the local variable
+        this.a = a;  // 'this' keyword is used to refer to the current object. 'this.a' is the instance variable and a is the local variable
         return a;
     }
 
