@@ -13,7 +13,7 @@ public class StringManipulation
         System.out.println("String with spaces replaced: " + replaced);
 
         // Detecting double spaces
-        if (input.trim().contains("  ")) // contains() method returns true if the string contains the specified sequence of char values
+        if (input.trim().contains("  "))
         {
             System.out.println("Double spaces detected in the original string.");
         } else
@@ -29,7 +29,7 @@ public class StringManipulation
         {
             System.out.println("No triple spaces found in the original string.");
         }
-        
+
         System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
     }
 }
