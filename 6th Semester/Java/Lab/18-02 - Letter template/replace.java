@@ -16,6 +16,7 @@ public class replace
 
         System.out.println("Letter after replacing: " + result);
         sc.close();
+        
         System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
 
     }
