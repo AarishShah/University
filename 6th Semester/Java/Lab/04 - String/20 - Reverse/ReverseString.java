@@ -11,5 +11,8 @@ public class ReverseString
             reversed = reversed +  input.charAt(i);
         }
         System.out.println("Reversed String is: " + reversed);
+
+        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+
     }
 }

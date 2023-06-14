@@ -32,6 +32,8 @@ public class palindrome
             System.out.println("The string is not a palindrome.");
         }
 
+        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+
         sc.close();
     }
 }
