@@ -26,7 +26,8 @@ public class StringManipulation
         } else
         {
             System.out.println("No triple spaces found in the original string.");
-            System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
         }
+
+        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
     }
 }
