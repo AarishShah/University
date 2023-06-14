@@ -8,13 +8,14 @@ public class palindrome
         System.out.print("Enter the string: ");
         String input = sc.nextLine();
 
-        // String input = "swims";
+        // String input = "Sage"; // is palindrome
+        // String input = "level"; // not palindrome
 
         int length = input.length();
         int j = length - 1;
         boolean isPalindrome = true;
 
-        for (int i = 0; i < length / 2; i++)
+        for (int i = 0; i < length / 2; i++)  // Comparing beyond the middle is redundant since the characters have already been compared. Hence we don't use 'i <= length / 2'
         {
             if (input.charAt(i) != input.charAt(j))
             {
