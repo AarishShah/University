@@ -4,7 +4,7 @@ public class StringManipulation
 {
     public static void main(String[] args)
     {
-        String input = "Sage is  170   cm tall.";
+        String input = "Sage is  cute and 170   cm tall.";
         String lowercase = input.toLowerCase();
         String replaced = lowercase.replace(" ", "_");
 
