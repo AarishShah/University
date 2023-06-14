@@ -1,3 +1,5 @@
+// String manipulation: toLowerCase(), replace(), trim(), contains()
+
 public class StringManipulation
 {
     public static void main(String[] args)
