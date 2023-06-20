@@ -2,28 +2,28 @@
 
 interface InterfaceClass // interface is a collection of abstract methods and static constants
 {
-    void fx1();
+    void fn1();
 
-    void fx2();
+    void fn2();
 
-    void fx3();
+    void fn3();
 }
 
 class derived implements InterfaceClass
 {
-    public void fx1()
+    public void fn1()
     {
-        System.out.println("hi i am overridden fxn1");
+        System.out.println("hi i am overridden fnn1");
     }
 
-    public void fx2()
+    public void fn2()
     {
-        System.out.println("hi i am overridden fxn2");
+        System.out.println("hi i am overridden fnn2");
     }
 
-    public void fx3()
+    public void fn3()
     {
-        System.out.println("hi i am overridden fxn3");
+        System.out.println("hi i am overridden fnn3");
     }
 }
 
@@ -33,9 +33,9 @@ class Main
     {
 
         derived d = new derived();
-        d.fx1();
-        d.fx2();
-        d.fx3();
+        d.fn1();
+        d.fn2();
+        d.fn3();
 
         // InterfaceClass i = new interfaceClass(); // interface cannot be instantiated
 
