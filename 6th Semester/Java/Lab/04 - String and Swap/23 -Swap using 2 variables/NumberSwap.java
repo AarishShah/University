@@ -1,3 +1,5 @@
+// swap two numbers without using a third variable
+
 public class NumberSwap
 {
     public static void main(String[] args)

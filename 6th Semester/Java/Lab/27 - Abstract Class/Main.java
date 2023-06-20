@@ -1,3 +1,5 @@
+// Program to demonstrate Abstract Class
+
 abstract class absClass
 {
     void fn1()
