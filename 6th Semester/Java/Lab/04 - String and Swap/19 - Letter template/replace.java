@@ -1,3 +1,5 @@
+// Write a program to replace the "<|Name>" string with the user input string.
+
 import java.util.Scanner;
 
 public class replace
