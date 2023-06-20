@@ -13,17 +13,17 @@ class derived implements InterfaceClass
 {
     public void fn1()
     {
-        System.out.println("hi i am overridden fnn1");
+        System.out.println("hi i am overridden fn1");
     }
 
     public void fn2()
     {
-        System.out.println("hi i am overridden fnn2");
+        System.out.println("hi i am overridden fn2");
     }
 
     public void fn3()
     {
-        System.out.println("hi i am overridden fnn3");
+        System.out.println("hi i am overridden fn3");
     }
 }
 
