@@ -9,7 +9,7 @@ public class replace
         Scanner sc = new Scanner(System.in);
         String name = sc.nextLine();
 
-        String salutation = "Dear <|Name>";
+        String salutation = "Dear <|Name>,";
         System.out.println("Letter template: " + salutation);
 
         String result = salutation.replace("<|Name>", name);
