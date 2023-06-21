@@ -52,7 +52,7 @@ public class Main
         System.out.println("s1: " + g.getS1() + ", s2: " + g.getS2() + ", s3: " + g.getS3());
         System.out.println("s1: " + f.getS1() + ", s2: " + f.getS2() + ", s3: " + f.getS3());
 
-        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+        System.out.println("\nSyed Aarish Shah | CSE-20-50");
 
     }
 }

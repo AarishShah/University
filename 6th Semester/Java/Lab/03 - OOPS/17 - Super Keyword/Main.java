@@ -37,6 +37,6 @@ public class Main
         Child c = new Child(10, 20);
         c.display(); // without super only child's display() method will be called
 
-        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+        System.out.println("\nSyed Aarish Shah | CSE-20-50");
     }
 }

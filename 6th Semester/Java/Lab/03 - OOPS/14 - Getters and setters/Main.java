@@ -55,7 +55,7 @@ public class Main
         System.out.println(r.area());
         System.out.println(r2.area());
 
-        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+        System.out.println("\nSyed Aarish Shah | CSE-20-50");
 
     }
 }

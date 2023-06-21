@@ -17,7 +17,7 @@ public class ThisKeyword
         System.out.println("Value of 'a': " + s.a); // Accessing the instance variable 'a' of the object 's' using 's.a'
         System.out.println("Returned value from 'fn' method: " + result); // Printing the returned value from 'fn' method
 
-        System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
+        System.out.println("\nSyed Aarish Shah | CSE-20-50");
 
     }
 }
