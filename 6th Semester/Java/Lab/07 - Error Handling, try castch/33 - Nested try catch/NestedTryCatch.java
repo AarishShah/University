@@ -21,17 +21,20 @@ public class NestedTryCatch
 
         try
         {
-            System.out.println("Value entered at index " + arr[i]);
-            System.out.println("Ratio is: " + (arr[i] / d));
+            try
+            {
+                System.out.println("Value entered at index " + arr[i]);
+                System.out.println("Ratio is: " + (arr[i] / d));
 
-        } catch (ArithmeticException e)
-        {
-            System.out.println("Error was caused due to ArithmeticException: " + e);
+            } catch (ArithmeticException e)
+            {
+                System.out.println("Error was caused due to ArithmeticException: " + e);
 
-        } catch (ArrayIndexOutOfBoundsException b)
-        {
-            System.out.println("Error was caused due to ArrayIndexOutOfBoundsException: " + b);
+            } catch (ArrayIndexOutOfBoundsException b)
+            {
+                System.out.println("Error was caused due to ArrayIndexOutOfBoundsException: " + b);
 
+            }
         } catch (Exception c)
         {
             System.out.println("Exception other than Arithmetic and ArrayIndexOutOfBounds: " + c);
