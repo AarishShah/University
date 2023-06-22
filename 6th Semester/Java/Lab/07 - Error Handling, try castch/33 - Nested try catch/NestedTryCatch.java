@@ -26,11 +26,11 @@ public class NestedTryCatch
 
         } catch (ArithmeticException e)
         {
-            System.out.println("Arithmetic Exception: " + e);
+            System.out.println("Error was caused due to ArithmeticException: " + e);
 
         } catch (ArrayIndexOutOfBoundsException b)
         {
-            System.out.println("ArrayIndexOutOfBounds: " + b);
+            System.out.println("Error was caused due to ArrayIndexOutOfBoundsException: " + b);
 
         } catch (Exception c)
         {
