@@ -6,7 +6,7 @@ public class tryCatch
 {
     public static void main(String[] args)
     {
-        int[] arr = new int[3];
+        int arr[] = new int[3];
         arr[0] = 10;
         arr[1] = 20;
         arr[2] = 30;
@@ -19,8 +19,7 @@ public class tryCatch
         System.out.print("Enter Divisor: ");
         int d = sc.nextInt();
 
-        // to show ArrayIndexOutOfBounds Exception
-
+        // to show ArrayIndexOutOfBounds Exception or Arithmetic Exception.
         try
         {
             System.out.println("Value entered at index " + arr[i]);
