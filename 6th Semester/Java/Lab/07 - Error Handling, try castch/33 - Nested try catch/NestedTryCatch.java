@@ -25,7 +25,7 @@ public class NestedTryCatch
             {
                 System.out.println("Value entered at index " + arr[i]);
                 System.out.println("Ratio is: " + (arr[i] / d));
-
+                
             } catch (ArithmeticException e)
             {
                 System.out.println("Error was caused due to ArithmeticException: " + e);
@@ -33,7 +33,6 @@ public class NestedTryCatch
             } catch (ArrayIndexOutOfBoundsException b)
             {
                 System.out.println("Error was caused due to ArrayIndexOutOfBoundsException: " + b);
-
             }
         } catch (Exception c)
         {
