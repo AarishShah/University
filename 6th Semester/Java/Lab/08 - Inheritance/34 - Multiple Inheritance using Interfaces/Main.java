@@ -6,8 +6,7 @@ interface ABC
     void fn1();
 }
 
-interface EFG extends ABC // Interface EFG extends interface ABC. It also implements the method of
-                          // interface ABC.
+interface EFG extends ABC // Interface EFG extends interface ABC. It also implements the method of interface ABC.
 {
     void fn2();
 }
@@ -17,8 +16,7 @@ interface HIJ
     void fn3();
 }
 
-class Big implements EFG, HIJ // Multiple Inheritance. Class Big implements both interfaces EFG and HIJ. It
-                              // also implements the methods of interface ABC as it extends interface EFG.
+class Big implements EFG, HIJ // Multiple Inheritance. Class Big implements both interfaces EFG and HIJ. It also implements the methods of interface ABC as it extends interface EFG.
 
 {
     public void fn1()
