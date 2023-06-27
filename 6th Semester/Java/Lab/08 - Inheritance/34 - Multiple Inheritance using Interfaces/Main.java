@@ -13,7 +13,7 @@ interface EFG extends ABC // Interface EFG extends interface ABC. It also implem
 
 interface HIJ
 {
-    void fn3();
+    void fn3(int a);
 }
 
 class Big implements EFG, HIJ // Multiple Inheritance. Class Big implements both interfaces EFG and HIJ. It also implements the methods of interface ABC as it extends interface EFG.
@@ -29,7 +29,7 @@ class Big implements EFG, HIJ // Multiple Inheritance. Class Big implements both
         System.out.println("fn2");
     }
 
-    public void fn3()
+    public void fn3(int a)
     {
         System.out.println("fn3");
     }
@@ -43,7 +43,7 @@ class Main
         Big b = new Big();
         b.fn1();
         b.fn2();
-        b.fn3();
+        b.fn3(1);
 
         System.out.println("\nSyed Aarish Shah | CSE-20-50");
     }
