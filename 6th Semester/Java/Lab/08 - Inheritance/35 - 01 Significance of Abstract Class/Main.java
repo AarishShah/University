@@ -1,3 +1,5 @@
+// Program to demonstrate the significance of abstract class
+
 abstract class Vehicle
 {
     protected String brand;
@@ -7,9 +9,9 @@ abstract class Vehicle
         brand = br;
     }
 
-    public abstract void start();
+    abstract public void start();
 
-    public abstract void stop();
+    abstract public void stop();
 }
 
 class Car extends Vehicle
@@ -19,7 +21,7 @@ class Car extends Vehicle
         super(c); // call the constructor of the superclass. In this case Vehicle(String br)
     }
 
-    @Override
+    @Override // annotation, not necessary to write, but good practice, tells the compiler that the method is overridden
     public void start()
     {
         System.out.println("Starting the car: " + brand); // brand is accessible here because it is protected
@@ -54,7 +56,7 @@ class Bike extends Vehicle
 
 class Main
 {
-    public static void main(String[] args)
+    public static void main(String args[])
     {
         Vehicle v1 = new Car("Lamborghini");
         v1.start();
