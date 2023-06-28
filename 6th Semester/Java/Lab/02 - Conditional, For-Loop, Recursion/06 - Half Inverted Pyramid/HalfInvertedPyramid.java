@@ -1,7 +1,4 @@
 // Write a program to print Half Inverted Pyramid of Stars
-// this code is for normal pyramid and not inverted pyramid
-
-// create new file for Half Inverted Pyramid
 
 import java.util.Scanner;
 

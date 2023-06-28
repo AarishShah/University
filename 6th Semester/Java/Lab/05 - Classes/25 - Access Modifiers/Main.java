@@ -20,7 +20,7 @@ class Main extends access
         System.out.println(z.c); // default
         // System.out.println(d.d); // private (error: The field access.d is not visible)
 
-        System.out.println("\n Syed Aarish Shah | CSE-20-50");
+        System.out.println("\nSyed Aarish Shah | CSE-20-50");
 
     }
 }
