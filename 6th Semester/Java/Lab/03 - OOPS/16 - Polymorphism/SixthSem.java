@@ -20,10 +20,11 @@ class SixthSem extends Student
 
     public static void main(String[] args)
     {
-        Student s = new SixthSem();
+        Student s = new SixthSem(); // upcasting: means a subclass object is assigned to a superclass reference variable.
         s.greet();
         // s.fn1(); // error as s is of type Student and Student class does not have fn1
-        // method
+        ((SixthSem) s).fn1(); // downcasting: means a superclass reference variable is assigned to a subclass object.
+        
         SixthSem s1 = new SixthSem();
         s1.greet();
         s1.fn1();

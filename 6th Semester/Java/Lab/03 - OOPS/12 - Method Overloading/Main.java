@@ -15,7 +15,7 @@ class Student
 
     public Student(int s3) // constructor overloading
     {
-        this(0, 0, s3);
+        this(0, 0, s3); // calling the constructor
     }
 
     public Student(Student other) // copy constructor
