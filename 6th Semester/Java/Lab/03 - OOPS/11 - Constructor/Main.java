@@ -5,13 +5,13 @@ class Rectangle
     private int length;
     private int breadth;
 
-    public Rectangle()
+    public Rectangle() // Default Constructor
     {
         length = 0;
         breadth = 0;
     }
 
-    public Rectangle(int l, int b)
+    public Rectangle(int l, int b) // Parameterized Constructor
     {
         setLength(l);
         setBreadth(b);
