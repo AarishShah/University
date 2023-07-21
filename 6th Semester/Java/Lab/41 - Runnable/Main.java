@@ -27,8 +27,7 @@ class Main
         thread1 t1 = new thread1();
         thread2 t2 = new thread2();
 
-        // t1.start(); // This will not work because the class does not extend Thread
-        // instead it implements Runnable
+        // t1.start(); // This will not work because the class does not extend Thread instead it implements Runnable
         // t2.start();
 
         // since the class implements Runnable and Runnable does not have a start(), we need to create a Thread object 
