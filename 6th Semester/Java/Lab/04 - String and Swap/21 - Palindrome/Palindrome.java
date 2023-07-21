@@ -10,8 +10,8 @@ public class Palindrome
         System.out.print("Enter the string: ");
         String input = sc.nextLine();
 
-        // String input = "Sage"; // is palindrome
-        // String input = "level"; // not palindrome
+        // String input = "Sage"; // is not palindrome
+        // String input = "level"; // is palindrome
 
         int length = input.length();
         int j = length - 1;
