@@ -30,9 +30,11 @@ class work
         thread1 t1 = new thread1();
         thread2 t2 = new thread2();
         
+        // run will not create a new thread, nor run concurrently
         t1.run();
         t2.run();
 
+        // start will create a new thread, and run concurrently
         // t1.start();
         // t2.start();
     }
