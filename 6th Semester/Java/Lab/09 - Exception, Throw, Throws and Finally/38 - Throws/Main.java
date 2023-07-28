@@ -1,3 +1,5 @@
+// Program to demonstrate the use of throws keyword
+
 public class Main
 {
     // public static int divide(int a, int b) //  in this case, error is thrown without declaring it in the method signature
@@ -23,5 +25,6 @@ public class Main
         {
             System.out.println("Error: " + e.getMessage());
         }
+        System.out.println("\nSyed Aarish Shah | CSE-20-50");
     }
 }

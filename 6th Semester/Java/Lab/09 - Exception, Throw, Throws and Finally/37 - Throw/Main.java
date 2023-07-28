@@ -1,3 +1,5 @@
+// Program to demonstrate the use of throw keyword
+
 import java.util.Scanner;
 
 class sampleExcep extends Exception
@@ -41,5 +43,7 @@ class Main
         }
 
         sc.close(); // close the scanner after throwing the exception
+
+        System.out.println("\nSyed Aarish Shah | CSE-20-50");
     }
 }
