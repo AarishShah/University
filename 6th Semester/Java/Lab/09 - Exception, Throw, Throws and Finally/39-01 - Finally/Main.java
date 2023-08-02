@@ -1,3 +1,5 @@
+// Program to demonstrate the finally block
+
 public class Main
 {
     public static void main(String[] args)
@@ -19,5 +21,7 @@ public class Main
         }
         // Code after the try-catch-finally block
         System.out.println("Program continues after try-catch-finally");
+
+        System.out.println("\nSyed Aarish Shah | CSE=20-50");
     }
 }

@@ -1,3 +1,5 @@
+// This program shows how to create a thread using Runnable interface
+
 class thread1 implements Runnable
 {
     public void run()
@@ -9,7 +11,7 @@ class thread1 implements Runnable
     }
 }
 
-class thread2 implements Runnable
+class thread2 implements Runnable // instead of creating a new threads, we could also create 2 objects of thread1. But this is just for demonstration
 {
     public void run()
     {
@@ -48,6 +50,8 @@ class Main
         funthread1.start();
         funthread2.start();
 
+        System.out.println("\nSyed Aarish Shah | CSE=20-50");
+        
     }
 
 }
