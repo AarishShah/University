@@ -1,10 +1,12 @@
+// Create a set and perform various operations on it
+
 import java.util.HashSet;
 import java.util.Set;
 
 public class SetDemo {
 
     public static void main(String[] args) {
-        Set<Integer> numberSet = new HashSet<>();
+        Set<Integer> numberSet = new HashSet<>(); // HashSet implements Set interface and does not allow duplicate elements to be stored in it (it overwrites the previous value) and does not maintain the insertion order of the elements
 
         // Add elements to the set
         numberSet.add(5);

@@ -1,3 +1,5 @@
+// Program to demonstrate ArrayList and its methods
+
 import java.util.ArrayList;
 
 public class Array

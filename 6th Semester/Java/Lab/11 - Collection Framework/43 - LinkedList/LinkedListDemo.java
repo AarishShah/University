@@ -1,3 +1,5 @@
+// A program for demonstrating the use of LinkedList class. Java LinkedList class uses doubly linked list to store the elements. It inherits the AbstractList class and implements List and Deque interfaces.
+
 import java.util.LinkedList;
 
 public class LinkedListDemo {
