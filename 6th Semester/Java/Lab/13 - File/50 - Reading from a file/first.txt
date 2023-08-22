@@ -1,0 +1,2 @@
+Reading a file in Java
+How can I read a file in Java? I have a file called `test.txt` that is in the same directory as my Java source file. I want to read the contents of this file.

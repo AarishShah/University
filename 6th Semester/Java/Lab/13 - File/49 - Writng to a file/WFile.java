@@ -1,22 +1,16 @@
-import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
-public class CFile
+public class WFile
 {
     public static void main(String[] args)
     {
-
-        File f = new File("first.txt");
         try
         {
-            if (f.createNewFile())
-            {
-                System.out.println("File created successfully");
-
-            } else
-            {
-                System.out.println("File already exist");
-            }
+            FileWriter fw = new FileWriter("first.txt");
+            fw.write("Writing to a file in Java\n");
+            fw.close();
+            System.out.println("File written successfully");
         } catch (IOException e)
         {
             System.out.println("Error occurred");
