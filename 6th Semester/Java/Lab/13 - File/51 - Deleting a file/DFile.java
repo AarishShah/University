@@ -5,7 +5,7 @@ public class DFile
     public static void main(String[] args)
     {
         File f = new File("first.txt");
-        if (f.delete())
+        if (f.delete()) // delete() method deletes the file or directory denoted by this abstract pathname
         {
             System.out.println("File deleted successfully");
         } else
