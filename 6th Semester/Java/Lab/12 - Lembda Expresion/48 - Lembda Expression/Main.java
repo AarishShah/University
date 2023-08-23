@@ -21,8 +21,8 @@ public class Main
     public static void main(String[] args)
     {
         inter i = () -> {
-            System.out.println("fn1() of Lemda Expression");
-            System.out.println("Line 2 of Lemda Expression");
+            System.out.println("fn1() of Lembda Expression");
+            System.out.println("Line 2 of Lembda Expression");
         };
         i.fn1();
 
