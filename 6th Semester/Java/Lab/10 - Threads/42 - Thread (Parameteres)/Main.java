@@ -61,6 +61,6 @@ class Main
             e.printStackTrace();
         }
 
-        System.out.println("Main thread finished execution.");
+        System.out.println("\nSyed Aarish Shah | CSE-20-50");
     }
 }
