@@ -1,3 +1,5 @@
+// Program to read from a file in Java
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

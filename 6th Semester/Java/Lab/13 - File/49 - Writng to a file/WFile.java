@@ -1,3 +1,5 @@
+// Program to show writing to a file in Java
+
 import java.io.FileWriter;
 import java.io.IOException;
 
