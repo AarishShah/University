@@ -1,9 +1,10 @@
 // Write an application illustrating the use of:
 // 1. TextField
 // 2. Choice
-// 3. Button
-// 4. TextArea
-// 5. List
+// 3. Checkbox
+// 4. Button
+// 5. TextArea
+// 6. List
 
 import java.awt.*;
 import java.awt.event.*;
@@ -12,6 +13,7 @@ public class Main extends Frame implements ActionListener
 {
     TextField tf;
     Choice c;
+    Checkbox cb;
     Button b;
     TextArea ta;
     List l;
@@ -24,12 +26,16 @@ public class Main extends Frame implements ActionListener
 
         c = new Choice();
         c.setBounds(50, 100, 75, 75);
-        c.add("C");
-        c.add("C++");
-        c.add("Java");
-        c.add("Python");
-        c.add("PHP");
+        c.add("Cypher");
+        c.add("Astra");
+        c.add("PHoenix");
+        c.add("OPmen");
+        c.add("Neon");
         add(c);
+
+        cb = new Checkbox("Sage");
+        cb.setBounds(150, 100, 50, 50);
+        add(cb);
 
         b = new Button("Add");
         b.setBounds(50, 150, 50, 50);
@@ -42,11 +48,11 @@ public class Main extends Frame implements ActionListener
 
         l = new List(5);
         l.setBounds(300, 50, 75, 75);
-        l.add("C");
-        l.add("C++");
-        l.add("Java");
-        l.add("Python");
-        l.add("PHP");
+        l.add("Reyna");
+        l.add("Raze");
+        l.add("Breach");
+        l.add("Sova");
+        l.add("Jett");
         add(l);
 
         setSize(500, 500);
