@@ -9,7 +9,7 @@ class Main extends Frame implements ActionListener
     TextField tf1, tf2;
     Button b1, b2;
 
-    Main()
+    Main() // Constructor
     {
         l1 = new Label("Username");
         l1.setBounds(50, 50, 100, 30);
@@ -63,7 +63,7 @@ class Main extends Frame implements ActionListener
 
     public void actionPerformed(ActionEvent e)
     {
-        if (e.getSource() == b1)
+        if (e.getSource() == b1) // If the source of the event is b1
         {
             String uname = tf1.getText();
             String pass = tf2.getText();

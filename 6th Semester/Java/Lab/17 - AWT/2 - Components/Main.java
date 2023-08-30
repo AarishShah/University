@@ -28,8 +28,8 @@ public class Main extends Frame implements ActionListener
         c.setBounds(50, 100, 75, 75);
         c.add("Cypher");
         c.add("Astra");
-        c.add("PHoenix");
-        c.add("OPmen");
+        c.add("Phoenix");
+        c.add("Omen");
         c.add("Neon");
         add(c);
 
@@ -78,5 +78,6 @@ public class Main extends Frame implements ActionListener
     public static void main(String[] args)
     {
         new Main();
+        System.out.println("Syed Aarish Shah | CSE-20-50");
     }
 }
