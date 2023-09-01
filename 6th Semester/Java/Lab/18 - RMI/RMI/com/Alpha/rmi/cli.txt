@@ -1,0 +1,15 @@
+// to complie the code:
+javac -d class com/Alpha/rmi/*.java
+
+
+To run the program go to the class folder and run the following commands in separate terminals:
+1. Start the RMI Registry.  Navigate to the directory where your class files are located (assuming class is your root folder for compiled classes). Then start the RMI registry:
+rmiregistry 9300
+or
+start rmiregistry 9300
+
+2. Start the Server (be in the folder where class is present)
+java -cp class com.Alpha.rmi.Server
+
+3. Start the Client
+java -cp class com.Alpha.rmi.Client
