@@ -41,10 +41,10 @@ public class Quadratic
         else
         {
             real = -b / (2 * a);
-            img = Math.sqrt(Discriminant) / (2 * a);
+            img = Math.sqrt(-Discriminant) / (2 * a);
 
             System.out.print("The roots are imaginary.\n");
-            System.out.printf("root 1 = {(%f)+(%f)} and root 2 = {(%f)-(%f)}", real, img, real, img);
+            System.out.printf("root 1 = {(%f)+(%f)} and root 2 = {(%f)-(%f)}", real, img, real, img); // conjugate pair
         }
 
         System.out.println("\n\nSyed Aarish Shah | CSE-20-50");
