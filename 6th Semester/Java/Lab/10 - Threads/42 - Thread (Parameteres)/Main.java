@@ -54,7 +54,7 @@ class Main
         try
         {
             // Main thread waits for t1 and t2 to finish
-            t1.join(); // join() method waits for a thread to die. In other words, it causes the currently running threads to stop executing until the thread it joins with completes its task.
+            t1.join(); // join() method waits for a thread to die. The join method is particularly useful when you want to ensure that a certain thread completes its execution before you proceed. 
             t2.join();
         } catch (InterruptedException e)
         {

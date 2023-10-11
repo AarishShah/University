@@ -1,5 +1,5 @@
 // Implement different types of layout classes in Java
-// 1. GridLayout class
+// 2. GridLayout class
 
 import java.awt.*;
 import javax.swing.*;

@@ -12,7 +12,7 @@ class Base implements inter
 {
     public void greet()
     {
-        System.out.println("Wekcome");
+        System.out.println("Welcome");
     }
 
     @Override
