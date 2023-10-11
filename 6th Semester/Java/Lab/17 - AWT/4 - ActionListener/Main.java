@@ -35,6 +35,8 @@ class Main extends Frame implements ActionListener
     public static void main(String args[])
     {
         Main f = new Main();
+
+        System.out.println("Syed Aarish Shah | CSE-20-50");
     }
 
     @Override

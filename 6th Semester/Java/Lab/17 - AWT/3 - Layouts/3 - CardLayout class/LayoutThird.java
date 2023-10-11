@@ -58,5 +58,7 @@ public class LayoutThird
 
         // Display the main frame
         frame.setVisible(true);
+
+        System.out.println("Syed Aarish Shah | CSE-20-50");
     }
 }
