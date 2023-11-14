@@ -1,5 +1,6 @@
 # Program to demonstrate if statement
 
+# a = 4
 a = 10
 
 if (a > 5):
