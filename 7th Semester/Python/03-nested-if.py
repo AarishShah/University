@@ -5,9 +5,13 @@ a = 8
 # a = 6
 
 if (a > 5):
-    print("a is greater than 5")
-    if (a > 7):
-        print("a is greater than 7")
-        if (a > 9):
-            print("a is greater than 9")
-        print("It is unbearable to live in your absence!")
+    print("1st Statement of first 'if'.")
+    if (a > 7):  # 2nd Statement of first 'if'
+        print("2nd Statement of first 'if' & 1st Statement of second (nested) 'if'.")
+        if (a > 9):  # 2nd Statement of second 'if'
+            print("1st Statement of third (nested) 'if'.")
+            print("2nd Statement of third (nested) 'if'.")
+        print("3rd statement of second (nested) if")
+    print("3rd Statement of first 'if'")
+
+print("This statement is independent of the 'if' conditions")
