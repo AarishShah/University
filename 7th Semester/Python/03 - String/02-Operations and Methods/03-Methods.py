@@ -1,33 +1,29 @@
 # Python Program to Demonstrate String Methods
 
-# Sample string
 str1 = "  Hello, World! Welcome to Python programming.  "
 
-# upper: Converts all characters in the string to uppercase
-print("Upper:", str1.upper())
+print("Upper:", str1.upper()) # upper: Converts all characters in the string to uppercase
 
-# lower: Converts all characters in the string to lowercase
-print("Lower:", str1.lower())
 
-# strip: Removes any leading (spaces at the beginning) and trailing (spaces at the end) characters (space is the default leading character to remove)
-print("Strip:", str1.strip())
+print("Lower:", str1.lower()) # lower: Converts all characters in the string to lowercase
 
-# replace: Replaces a substring in the string
-print("Replace 'World' with 'Everyone':", str1.replace("World", "Everyone"))
+print("Strip:", str1.strip()) # strip: Removes any leading (spaces at the beginning) and trailing (spaces at the end) characters (space is the default leading character to remove)
+
+print("Replace 'World' with 'Everyone':", str1.replace("World", "Everyone")) # replace: Replaces a substring in the string
 
 # split: Splits the string at the specified separator (defaults to space) and returns a list
 print("Split at spaces:", str1.split()) # space would not be there in the output
 
-# capitalize: Converts the first character to upper case and the rest to lower case
-print("Capitalize:", str1.capitalize())
+print("Capitalize:", str1.capitalize()) # capitalize: Converts the first character to upper case and the rest to lower case
 
 # center: Centers the string, padding it with spaces. Read the comment at the end of the program
 print("Center with width 50:", str1.center(50))
 print(len(str1.center(50)))
 print(len(str1.center(2)))
 
-# count: Returns the number of times a specified value occurs in a string
-print("Count occurrences of 'o':", str1.count('o'))
+print("Count occurrences of 'o':", str1.count('o')) # count: Returns the number of times a specified value occurs in a string
+
+
 
 '''
 The center method in Python is used to center-align a string within a specified width by padding it with spaces (or any other specified character) on both sides. In your code snippet, str1.center(50) centers the string str1 within a width of 50 characters.

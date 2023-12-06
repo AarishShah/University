@@ -1,4 +1,5 @@
-// Prrgram to identify white spaces in a sentence
+// Program to identify white spaces in a sentence
+// 23rd December 2023
 
 #include <stdio.h>
 

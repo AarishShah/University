@@ -3,6 +3,8 @@
 print("Enter a number: ")
 a = int(input())
 
+# a = int(input("Enter a number: "))
+
 match a:
     case 1:
         print("a is 1")
