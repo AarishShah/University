@@ -10,7 +10,7 @@ int main()
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    m = n; // Preserving the value of n before it becomes 0.
+    m = n; // Preserving the value of n before it becomes 0. We need this value to compare with the reversed number
 
     while (n != 0)
     {

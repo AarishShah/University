@@ -36,7 +36,7 @@ int main()
         count++;
     }
 
-    printf("Number of words: %d\n", count);
+    printf("Number of tokens: %d\n", count);
 
     return 0;
 }

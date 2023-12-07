@@ -1,0 +1,1 @@
+// Write a program that checks if a string is a palindrome. Also remove white spaces from it.
