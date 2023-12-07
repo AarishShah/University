@@ -1,4 +1,4 @@
-// Write a program that checks if a string is a palindrome. Also remove white spaces from it.
+// Write a program that checks if a sentence is a palindrome or not.
 
 #include <stdio.h>
 #include <string.h>
