@@ -2,7 +2,7 @@ def caesar_cipher(text, shift):
     result = ""
 
     for char in text:
-        if char.isalpha():
+        if char.isalpha():  # Check if the character is a letter
             if char.isupper():
                 start = 65
             else:
