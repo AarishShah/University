@@ -3,6 +3,7 @@
 # There are two types of loops: Entry Controlled Loops and Exit Controlled Loops.
 # Entry Controlled Loops: In entry controlled loops, the condition is checked before entering the loop body. For example, for loop, while loop.
 # Exit Controlled Loops: In exit controlled loops, the condition is checked after executing the loop body. For example, do-while loop.
+# See the flow diagram on copy (Page 11)
 
 # Python has two primitive loop commands: while loops and for loops.
 
