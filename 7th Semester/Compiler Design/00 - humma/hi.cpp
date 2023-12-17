@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    char str[100] = "This is sum";
+    char str[100] = "Make Khushboo watch JJK";
     char rev[100] = "";
     // cout << "Enter a string: ";
     // cin.get(str, 100);
@@ -20,22 +20,20 @@ int main()
         rev[j] = str[i];
         j++;
     }
+    rev[j] = ' ';
     cout << "Reverse of the string: " << rev << endl;
 
     // To reorder the words in the string
     // Note: length of rev will be same as original string
-    for (int i = 0; i <= length - 1; i++)
+
+    for (int i = 0; i <= length; i++)
     {
         if (rev[i] == ' ')
         {
-            int z = 0;
+            int space = i;
 
-            while (z != i)
-            {
-                z = z + 1;
-                cout << rev[i - z];
-            }
-            cout << endl;
+            cout << rev[space - 1];
+            
         }
     }
 }
