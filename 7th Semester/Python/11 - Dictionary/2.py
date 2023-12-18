@@ -5,6 +5,6 @@ print("Print Letters from ASCII Value using dictionary")
 
 d = {}
 for i in range(65, 65+26):
-    d[i] = chr(i) # right side is key and left side is value
+    d[i] = chr(i) # right side is value and left side is key
 
 print(d)

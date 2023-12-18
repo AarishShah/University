@@ -1,8 +1,8 @@
 # Sets
 # Unordered collection of unique elements
 # Unique - No duplicates
-# Sets are mutable - check
-# Sets are unchangable - sir
+# Set is mutable. We can add or remove items from it.
+# Set is unchangable. We cannot change its items, but we can add or remove items from it.
 
 A = {"ABC", 9, 3.5, True}
 print(A)
