@@ -1,3 +1,5 @@
+# Write a program to find the number of occurrences of each letter present in the given string.
+
 letter_count = {}  # Dictionary to store letter counts
 
 input_string = input("Enter a string: ")
@@ -14,3 +16,5 @@ for letter in input_string:  # Iterate over each character in the input string
 print("\nLetter Occurrences:")
 for letter, count in letter_count.items():
     print(f"'{letter}': {count}")
+
+# Khushboo's program is better

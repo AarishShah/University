@@ -1,5 +1,6 @@
 # Set
 # Set is a collection type that is unordered and unindexed. In Python, sets are written with curly brackets.
+# Empty curly brackets will not make an empty set, it will make an empty dictionary. To make an empty set, we use the set() function.
 # Set items are unordered, unchangeable, and do not allow duplicate values.
 # Set items can be of any data type.
 # Set items are unique.

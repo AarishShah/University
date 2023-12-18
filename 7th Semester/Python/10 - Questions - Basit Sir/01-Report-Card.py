@@ -17,11 +17,19 @@ while True:
 
     elif choice == 2:
         print("\nStudent Information:")
-        for name, marks in result_dictionary.items():
-            print(f"Name: {name}, Marks: {marks}")
+        for x, y in result_dictionary.items():
+            print(f"Name: {x}, Marks: {y}")
 
     elif choice == 3:
         break
 
     else:
         print("Wrong Choice")
+
+'''
+The program understands that 'x' represents the key, and 'y' represents the value because of the way result_dictionary.items()
+The items() method of a dictionary returns a view of the dictionary's key-value pairs as tuples
+
+In each iteration, the for loop unpacks the tuple into the variables x and y, so x is assigned the key, and y is assigned the value
+
+'''
