@@ -1,5 +1,5 @@
 # fStrings are a new way to format strings in Python 3.6 and above.
-# Literal for string interpolation
+# Literal for string interpolation (process of embedding or inserting values into a string)
 
 # This is the old way of formatting strings
 Letter = "Good Morning {}. Have a nice day {}."
