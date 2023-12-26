@@ -4,7 +4,7 @@
 # Syntax: [start:stop:step]
 # start: Starting index
 # stop: Ending index
-# will print between start and stop excluding start and stop
+# will print between start and stop, including start & excluding stop
 
 str1 = "Seventh"
 str2 = "Semester"
