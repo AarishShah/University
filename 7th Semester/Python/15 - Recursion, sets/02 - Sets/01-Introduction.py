@@ -4,7 +4,7 @@
 # Set is mutable. We can add or remove items from it.
 # Set is unchangable. We cannot change its items, but we can add or remove items from it.
 
-A = {"ABC", 9, 3.5, True}
+A = {"ABC", 9, 3.5, True, False}
 print(A)
 
 B = {1,3,4,2}
