@@ -5,6 +5,7 @@
 # Example of void functions
 def opt(a, b):
     print("{0} + {1} = {2}" .format(a, b, a+b)) # This is called string formatting. {0}, {1}, {2} are called placeholders.
+    # print(f"{a} + {b} = {a+b}") # This is called f-string formatting. {a}, {b} are called placeholders.
     print("{1} + {0} = {2}" .format(a, b, a+b))
     print("{0} - {1} = {2}" .format(a, b, a-b))
     print("{1} - {0} = {2}" .format(a, b, b-a))
