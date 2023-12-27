@@ -25,7 +25,7 @@ S2 = {4,5,6,7,8}
 # print(S1.union(S2)) # {1, 2, 3, 4, 5, 6, 7, 8} - union
 # S1.update(S2)
 # print(S1) # Union of S1 and S2, then S1 is updated
-# print(S1.update(S2)) # None - union
+# print(S1.update(S2)) # None - union - None because it is a method and it does not return anything
 
 # print(S1.intersection(S2)) # {4, 5} - intersection
 # S1.intersection_update(S2)
