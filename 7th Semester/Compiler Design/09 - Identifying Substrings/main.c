@@ -20,7 +20,7 @@ int main()
 
     for (i = 0; i < strlen(parent); i++)
     {
-        j = 0;
+        j = 0; // to iterate through the substring
         if (*p == *s)
         {
             while (*(s + j) != '\0')
