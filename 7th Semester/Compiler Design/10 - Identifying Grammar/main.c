@@ -17,7 +17,7 @@
 #include <string.h>
 #include <ctype.h> // For isdigit()
 
-void convertString(const char *input, char *output) // const prevents the function from modifying the input string
+void grammarRules(const char *input, char *output) // const prevents the function from modifying the input string
 {
     for (int i = 0; input[i] != '\0'; i++)
     {
@@ -49,7 +49,7 @@ void convertString(const char *input, char *output) // const prevents the functi
     output[strlen(input)] = '\0';
 }
 
-void checkString(const char *input, char *output)
+void reduceRule(const char *input, char *output)
 {
     int j = 0; // Index for the output string
 
@@ -88,8 +88,8 @@ void checkString(const char *input, char *output)
 int main()
 {
     char inputString[100];
-    char convertedString[100];
-    char processedString[100];
+    char khushiString[100];
+    char resultString[100];
     char temp[100];
 
     printf("Enter a string: ");
@@ -98,26 +98,28 @@ int main()
     int index_of_newline = strcspn(inputString, "\n"); // return the index when the newline character is found
     inputString[index_of_newline] = 0;                 // Replace the newline character with null character (0 or '\0' are the same thing in C)
 
-    convertString(inputString, convertedString);
-    printf("Converted string: %s\n", convertedString);
+    grammarRules(inputString, khushiString);
+    printf("Converted string: %s\n", khushiString);
 
-    strcpy(temp, convertedString); // Initialize temp with the converted string
+    // reduceRule(khushiString, resultString); // delete this line after explaining
+
+    strcpy(temp, khushiString); // Initialize temp with the converted (khushi) string
     do
     {
-        checkString(temp, processedString);
+        reduceRule(temp, resultString);
 
         // Check if further simplification is possible
-        if (strcmp(temp, processedString) == 0)
+        if (strcmp(temp, resultString) == 0)
         {
             break; // Stop if no changes
         }
         else
         {
-            strcpy(temp, processedString); // Update temp for comparison in the next iteration
+            strcpy(temp, resultString); // Update temp for comparison in the next iteration
         }
     } while (1);
 
-    printf("Checked string: %s\n", processedString);
+    printf("Checked string: %s\n", resultString);
 
     return 0;
 }
