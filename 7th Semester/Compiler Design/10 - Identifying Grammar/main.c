@@ -94,7 +94,7 @@ void reduceRule(const char *input, char *output)
 int main()
 {
     char inputString[100];
-    char tokenString[100];
+    char khushiString[100];
     char resultString[100];
     char temp[100];
 
@@ -104,12 +104,12 @@ int main()
     int index_of_newline = strcspn(inputString, "\n"); // return the index when the newline character is found
     inputString[index_of_newline] = 0;                 // Replace the newline character with null character (0 or '\0' are the same thing in C)
 
-    grammarRules(inputString, tokenString);
-    printf("Converted string: %s\n", tokenString);
+    grammarRules(inputString, khushiString);
+    printf("Converted string: %s\n", khushiString);
 
-    // reduceRule(tokenString, resultString); // delete this line after explaining
+    // reduceRule(khushiString, resultString); // delete this line after explaining
 
-    strcpy(temp, tokenString); // Initialize temp with the Token string
+    strcpy(temp, khushiString); // Initialize temp with the converted (khushi) string
     do
     {
         reduceRule(temp, resultString);
