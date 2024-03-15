@@ -12,6 +12,12 @@
 // 636 ->  6
 // 465 ->  6
 
+// Example Question:
+// (D+D) || (D*D) || (D)
+// {2 + (3 + 4) +5}
+// {2 + 7 + 5}
+// {14} - Reseamble (D)
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
