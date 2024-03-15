@@ -12,7 +12,7 @@
 #include <string.h>
 #include <ctype.h> // For isdigit()
 
-void convertString(const char *input, char *output) // const prevents the function from modifying the input string
+void grammarRules(const char *input, char *output) // const prevents the function from modifying the input string
 {
     for (int i = 0; input[i] != '\0'; i++)
     {
@@ -55,7 +55,7 @@ int main()
     int index_of_newline = strcspn(inputString, "\n"); // return the index when the newline character is found
     inputString[index_of_newline] = 0;                 // Replace the newline character with null character (0 or '\0' are the same thing in C)
 
-    convertString(inputString, outputString);
+    grammarRules(inputString, outputString);
     printf("Converted string: %s\n", outputString);
 
     return 0;
