@@ -122,6 +122,7 @@ int main()
         else
         {
             strcpy(temp, resultString); // Update temp for comparison in the next iteration
+            printf("Middle Iterations: %s\n", resultString);
         }
     } while (1);
 
