@@ -24,6 +24,6 @@ class Married(Female, Male):
     def display(self):
         print(f"The Married Couple is {self.fname} and {self.mname}")
 
-m = Married("John", "Jane")
+m = Married("Happy", "Doctor")
 m.display()
 # m.details()
