@@ -1,3 +1,5 @@
+# split - ssplit the string where the separator (comma) is found
+
 f = open("try.txt", "r")
 i = 0
 while True:

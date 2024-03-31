@@ -1,5 +1,6 @@
+Value 1, Value 2, Value 3.
 A normal statement
-Khushboo wants to eat ice cream
-Humma wants Maki to Khushboo
+Khushboo wants, to eat ice cream
+Humma wants Maki to win, and wants to eat ice cream
 12
 12.5
