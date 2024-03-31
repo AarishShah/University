@@ -7,7 +7,7 @@ def Sum (dt, *args):
         answer = ''
 
     for i in args:
-        answer += i
+        answer = answer + i
 
     print(answer)
 

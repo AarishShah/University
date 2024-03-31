@@ -1,5 +1,5 @@
 
-# Overloading - is a type of polymorphism that adds additional functionalities for the existing propertie of objects. Objects can be methods, operators, or properties.
+# Overloading - is a type of polymorphism that adds additional functionalities for the existing properties of objects. Objects can be methods, operators, or properties.
 
 # Method overloading
 
@@ -7,12 +7,13 @@
 # 1. Varying datatypes off parameters
 # 2. Varying number of arguments
 
-# the module 'multi_dispatch' is used to implement method overloading in python.
+# the module 'multipledispatch' is used to implement method overloading in python.
 
 # @dispatch(data_type, data_type, ...)
 # def function_name(n1, n2, ...):
 
-from multi_dispatch import dispatch
+# Example 1: Varying datatypes of parameters
+from multipledispatch import dispatch
 
 class opt:
     @dispatch(int)
