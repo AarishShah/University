@@ -1,3 +1,5 @@
+# Notion: explaination of below comments on notion. https://7thsemester.notion.site/Pandas-80d5be72eafa43debde21d80b4714271?pvs=4
+
 # Pandas - Python Data Analysis Library
 
 # Analyzing
@@ -7,4 +9,4 @@
 
 # Pandas is built on top of the NumPy package, which means a lot of the structure of NumPy is used or replicated in Pandas. Data in pandas is often used to feed statistical analysis in SciPy, plotting functions from Matplotlib, and machine learning algorithms in Scikit-learn.
 
-# trick -  we can install pandas to automatically install numpy to avoid any compatibility issues.
+# trick -  we can install pandas to automatically install numpy to avoid any compatibility issues (usually in other environments).
