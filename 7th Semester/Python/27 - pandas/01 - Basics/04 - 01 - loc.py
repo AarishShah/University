@@ -10,10 +10,9 @@ python = {
 s = pd.DataFrame(python)
 print(s)
 
+print("~~~~~~~~~~~~~~")
 print(s.loc[0]) # Will locate the first row
+
+
+print("~~~~~~~~~~~~~~")
 print(s.loc[[0,1]]) # Will locate the first and second row
-
-q = pd.DataFrame(python, index=["one", "two", "three"])
-print(q) # Will print the same as s but with different index
-
-print(q.loc["one"]) # Will locate the first row

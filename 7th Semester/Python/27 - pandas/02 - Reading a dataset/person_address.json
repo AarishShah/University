@@ -1,0 +1,12 @@
+{
+    "person": {
+        "name": "Khushboo",
+        "age": 20,
+        "nickname": "Panda"
+    },
+    "address": {
+        "city": "Srinagar",
+        "state": "Jammu and Kashmir",
+        "country": "India"
+    }
+}
