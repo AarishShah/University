@@ -5,6 +5,7 @@
 #  dropna() method has the following parameters:
 #  axis: 0 for rows, 1 for columns
 #  how: 'any' if any empty cells are present, 'all' if all cells are empty
+# hover over the fn to reads the documentation
 
 #  Example
 '''
@@ -24,8 +25,13 @@ Nan     40          62
 import pandas as pd
 
 s = pd.read_csv('data.csv')
+print(s)
+
+print("-----------------------")
+
 t = s.dropna() # creates a new DataFrame without empty cells
 print(t.to_string())
 
-t =s.dropna(implace=True) # removes empty cells from the original DataFrame
+print("-----------------------")
+s.dropna(inplace=True) # removes empty cells from the original DataFrame
 print(s.to_string())
