@@ -1,3 +1,5 @@
+# Notion: https://7thsemester.notion.site/Python-766ee4d4a933446fbe59f6fde2edb7d9?pvs=4
+
 # Data types
 
 '''
