@@ -19,6 +19,8 @@ from numpy import random
 s = random.choice([8,7,5,3,4,2], p=[0.3, 0.1, 0.4, 0.1, 0.1, 0.0], size=(50))
 print(s)
 
+print('-------------------')
+
 # Do yourself
 # Generate a 2-D array that draws 10 values from a binomial distribution with a probability of 0.5
 t = random.choice([0, 1], p=[0.5, 0.5], size=(10, 3))

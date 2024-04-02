@@ -10,6 +10,6 @@ from numpy import random
 s = random.choice([8,7,4,2,1])
 print(s)
 
-# Generate a random number from provided list
+# Generate a random array of size 5x3 from provided list
 t = random.choice([8,7,4,2,3], size=(5,3))
 print(t)

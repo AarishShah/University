@@ -8,16 +8,11 @@
 
 from numpy import random
 import matplotlib.pyplot as plt
-
 import seaborn as sn
 
-n = random.normal(loc=0, scale=1, size=1000)
-print(n)
+# question: create a 3x3 matrix with mean=2 and std=1
 
-# question
-# 3x3 mean=2, std=1
-
-s = random.normal(loc=2, scale=1, size=(3, 3))
+s = random.normal(size=(3, 3), loc=2 , scale=1) # position of argument does not matter
 print(s)
 
 sn.distplot(s, hist=False)
