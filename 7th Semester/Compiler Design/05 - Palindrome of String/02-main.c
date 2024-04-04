@@ -8,7 +8,7 @@ int main()
     char str[100], rev[100];
 
     printf("Enter a string: ");
-    scanf("%s", str);
+    gets(str);
 
     strcpy(rev, str); // Copying str to rev
 
