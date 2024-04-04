@@ -1,4 +1,5 @@
 // Write a program that checks if a sentence is a palindrome or not.
+// This program ignores the white spaces in the sentence. For example, "ab b a" is a palindrome although it is not a palindrome if we consider the white spaces.
 
 #include <stdio.h>
 #include <string.h>
