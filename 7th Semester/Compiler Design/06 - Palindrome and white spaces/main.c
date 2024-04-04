@@ -22,7 +22,7 @@ int main()
 {
     char str[100];
     printf("Enter a string you want to check: ");
-    scanf("%[^\n]%*c", str); // Reads the line with spaces
+    gets(str); // Reads the line with spaces
 
     removeSpaces(str); // Remove spaces from the string
 
