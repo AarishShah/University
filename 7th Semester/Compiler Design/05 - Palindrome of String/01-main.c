@@ -7,7 +7,7 @@ int main()
 {
     char str[100];
     printf("Enter a string you want to check: ");
-    scanf("%s", str);
+    gets(str); // Reads the line with spaces
 
     int len = strlen(str);
     int i = 0; // iterating from the start
