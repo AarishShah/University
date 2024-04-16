@@ -5,7 +5,7 @@
 '''
 Python has the following data types built-in by default, in these categories:
 
-Text Type:	str
+Text Type:	    str
 Numeric Types:	int, float, complex
 Sequence Types:	list, tuple, range
 Mapping Type:	dict
