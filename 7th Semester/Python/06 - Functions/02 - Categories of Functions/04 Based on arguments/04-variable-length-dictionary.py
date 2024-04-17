@@ -1,5 +1,5 @@
 # Example 3 of function with variable-length arguments
-# to store values in a Dictionary instead of a list
+# to store values in a Dictionary instead of a Tuple
 def Sum(**Marks):
     print(Marks)
 
