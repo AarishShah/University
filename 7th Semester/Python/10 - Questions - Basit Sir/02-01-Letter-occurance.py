@@ -12,6 +12,9 @@ for letter in input_string:  # Iterate over each character in the input string
             # Add the letter to the dictionary with count 1
             letter_count[letter] = 1
 
+# Using dictionary comprehension
+# letter_count = {letter: input_string.count(letter) for letter in input_string if letter.isalpha()}
+
 # Display the letter counts
 print("\nLetter Occurrences:")
 for letter, count in letter_count.items():
