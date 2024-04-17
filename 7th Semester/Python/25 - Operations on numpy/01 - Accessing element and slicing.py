@@ -17,3 +17,10 @@ print(q[0:2,2]) # [3,6]
 
 # 2 refers to the third column of the array.
 # This means we're selecting the third column's elements from the rows we've specified in the first part of the slice.
+
+# [
+#   [1,2,3],
+#   [4,5,6]
+# ]
+
+# The output is [3,6] because we're selecting the third element from the first and second rows of the array.
