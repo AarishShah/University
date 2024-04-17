@@ -9,7 +9,7 @@
 # add(6, 4) = 10
 # add(10, 5) = 15
 
-# incase a function is something like increases the variables, then reduce would get stuck in infinite loop
+# incase a function is something that increases the variables, then reduce would get stuck in infinite loop
 
 from functools import reduce
 L = [1, 2, 3, 4, 5]
@@ -21,3 +21,4 @@ def add(x, y):
     return x+y
 
 s = reduce(add, L)
+print(s)

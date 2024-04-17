@@ -6,3 +6,4 @@ def filter_fn(x):
 
 L = [3, 4, 5, 7, 3, 8]
 L2 = list(filter(filter_fn, L))
+print(L2)
