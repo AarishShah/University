@@ -6,8 +6,8 @@ class Person:
         self.name = name
 
 P = Person(63, "Khushboo")
-print(P.name) # Asif
-print(P.age) # 80
+print(P.name) # Khushboo
+print(P.age) # 63
 
 # Above values can be modified from anywhere
 P.name = "Khushboo Hameed"
