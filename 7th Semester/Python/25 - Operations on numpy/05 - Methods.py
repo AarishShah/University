@@ -25,3 +25,6 @@ print(np.zeros_like(Sage)) # [[0 0 0] [0 0 0]]
 
 # # np.copy - Creates a copy of an array.
 print(np.copy(Sage)) # [[1 2 3] [4 5 6]]
+
+# shape - shape gives the dimensions of the array
+# size - size gives the total number of elements in the 
