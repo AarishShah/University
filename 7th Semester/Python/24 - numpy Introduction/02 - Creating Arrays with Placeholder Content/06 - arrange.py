@@ -1,4 +1,4 @@
-# The numpy.arange([start, ]stop, [step, ]dtype=None) function generates evenly spaced values within a given interval. The arguments are:
+# The numpy.arange(start, stop, step, dtype=None) function generates evenly spaced values within a given interval. The arguments are:
 
 # start (optional): The start of the interval range. If omitted, it defaults to 0.
 # stop: The end of the interval range. This value is not included in the output array.
