@@ -9,3 +9,10 @@ greet(firstname="Syed", middlename="Aarish", lastname="Shah")
 # keys are firstname, middlename, lastname.
 # values are Syed, Aarish, Shah.
 # name["firstname"] is the value of the key firstname, which is Syed.
+
+# Dictionary would look like this:
+# name = {
+#     "firstname": "Syed",
+#     "middlename": "Aarish",
+#     "lastname": "Shah"
+# }
