@@ -23,8 +23,10 @@ S1.remove(8) # KeyError: 8 - remove element from set
 
 print(S1.discard(8)) # {1, 2, 3, 4, 5} - discard element from set
 
-# pop
+# pop - removes and returns an arbitrary element from the set
 print(S1.pop()) # 1 - pop element from set
+
+# use remove() or discard() to remove a specific element
 
 # clear
 S1.clear()
