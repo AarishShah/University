@@ -1,4 +1,4 @@
-# he .astype() function in pandas is used to cast a pandas object to a specified dtype. dtype can be a numpy dtype or Python type, which can include:
+# The .astype() function in pandas is used to cast a pandas object to a specified dtype. dtype can be a numpy dtype or Python type, which can include:
 
 # int: for integer numbers.
 # float: for floating-point numbers.
