@@ -20,5 +20,6 @@ print(f"Marks of Person1 is {Z1} and marks of Person2 is {Z2}.")
 
 Price = 3.045
 txt = f"price is {Price:.2f} dollars"
+print(txt)
 
 print(f"{2*4}") # its type is string
