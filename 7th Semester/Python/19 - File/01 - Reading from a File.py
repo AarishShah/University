@@ -1,4 +1,4 @@
-# https://www.notion.so/7thsemester/Python-File-Operations-and-Functions-e1cb8c3a796441f4a4f188fade464463?pvs=4
+# https://7thsemester.notion.site/Python-File-Operations-and-Functions-bc9d2012be124f11a0f24b089755586b?pvs=4
 
 # Normally used senario
 file = open ("try.txt", "r")
