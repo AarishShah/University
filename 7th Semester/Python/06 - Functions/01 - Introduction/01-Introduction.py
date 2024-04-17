@@ -14,5 +14,5 @@
      statementN
      return value # optional
 
- def function_name(parameters):
+function_name(arguments):
 '''
