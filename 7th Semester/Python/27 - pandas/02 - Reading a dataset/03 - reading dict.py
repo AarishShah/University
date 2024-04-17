@@ -1,7 +1,7 @@
 import pandas as pd
 
 students = {
-    "Pyhton": {
+    "Python": {
         "s1": 100,
         "s2": 200,
         "s3": 300,
