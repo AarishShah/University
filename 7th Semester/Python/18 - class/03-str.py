@@ -1,5 +1,5 @@
 ###3
-# __str__ method: it control what should be returned when the class object is represented as a string
+# __str__ method: it controls what should be returned when the class object is represented as a string
 
 class student:
     def __init__ (self, name, roll):
@@ -18,4 +18,4 @@ class student:
         return f"{agent.name} {agent.roll}"
 
 s1 = student ("Neon" , 19)
-print(s1) #will give the name and roll number because of __str__ method
+print(s1) # will give the name and roll number because of __str__ method
