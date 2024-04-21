@@ -109,7 +109,7 @@ int main()
     // reduceRule(tokenString, resultString); // delete this line after explaining
 
     strcpy(temp, tokenString); // Initialize temp with the Token string
-    do
+    while (1)
     {
         reduceRule(temp, resultString);
 
@@ -118,12 +118,11 @@ int main()
         {
             break; // Stop if no changes
         }
-        else
-        {
-            strcpy(temp, resultString); // Update temp for comparison in the next iteration
-            printf("Middle Iterations: %s\n", resultString);
-        }
-    } while (1);
+
+        // Otherwise, update temp and print the intermediate result
+        strcpy(temp, resultString);
+        printf("Middle Iterations: %s\n", resultString);
+    };
 
     printf("Checked string: %s\n", resultString);
 
