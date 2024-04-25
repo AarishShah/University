@@ -5,7 +5,7 @@
 void trim_newline(char *str)
 {
     int len = strlen(str);
-    while (len > 0 && (str[len - 1] == '\n' || str[len - 1] == '\r' || str[len - 1] == ' '))
+    while (len > 0 && (str[len - 1] == '\n'))
     {
         str[len - 1] = '\0';
         len--;
