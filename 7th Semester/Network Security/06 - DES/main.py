@@ -1,3 +1,4 @@
+# pip install pycryptodome
 from Crypto.Cipher import DES
 import binascii
 
