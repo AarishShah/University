@@ -3,12 +3,15 @@
 #include <ctype.h>
 
 // Function to perform Vigenère encryption
-void vigenereEncrypt(char *text, const char *key) {
+void vigenereEncrypt(char *text, const char *key)
+{
     int keyLength = strlen(key);
     int j = 0; // key index
 
-    for (int i = 0; text[i] != '\0'; i++) {
-        if (isalpha(text[i])) {
+    for (int i = 0; text[i] != '\0'; i++)
+    {
+        if (isalpha(text[i]))
+        {
             char caseOffset = isupper(text[i]) ? 'A' : 'a';
             int shift = key[j % keyLength] - 'A';
             text[i] = (text[i] - caseOffset + shift + 26) % 26 + caseOffset;
@@ -18,12 +21,15 @@ void vigenereEncrypt(char *text, const char *key) {
 }
 
 // Function to perform Vigenère decryption
-void vigenereDecrypt(char *text, const char *key) {
+void vigenereDecrypt(char *text, const char *key)
+{
     int keyLength = strlen(key);
     int j = 0; // key index
 
-    for (int i = 0; text[i] != '\0'; i++) {
-        if (isalpha(text[i])) {
+    for (int i = 0; text[i] != '\0'; i++)
+    {
+        if (isalpha(text[i]))
+        {
             char caseOffset = isupper(text[i]) ? 'A' : 'a';
             int shift = key[j % keyLength] - 'A';
             text[i] = (text[i] - caseOffset - shift + 26) % 26 + caseOffset;
@@ -32,7 +38,8 @@ void vigenereDecrypt(char *text, const char *key) {
     }
 }
 
-int main() {
+int main()
+{
     char text[100];
     char key[100];
     int choice;
@@ -46,8 +53,10 @@ int main() {
     key[strcspn(key, "\n")] = 0; // remove newline character
 
     // Validate and convert key to uppercase
-    for (int i = 0; key[i] != '\0'; i++) {
-        if (!isalpha(key[i])) {
+    for (int i = 0; key[i] != '\0'; i++)
+    {
+        if (!isalpha(key[i]))
+        {
             printf("Invalid key! Only alphabetic characters are allowed.\n");
             return 1;
         }
@@ -58,13 +67,18 @@ int main() {
     scanf("%d", &choice);
 
     // Encrypt or decrypt based on user choice
-    if (choice == 1) {
+    if (choice == 1)
+    {
         vigenereEncrypt(text, key);
         printf("\nEncrypted Text: %s\n", text);
-    } else if (choice == 2) {
+    }
+    else if (choice == 2)
+    {
         vigenereDecrypt(text, key);
         printf("\nDecrypted Text: %s\n", text);
-    } else {
+    }
+    else
+    {
         printf("Invalid choice!\n");
         return 1;
     }
