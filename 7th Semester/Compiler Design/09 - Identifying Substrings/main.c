@@ -8,7 +8,7 @@ int main()
     char parent[100], substring[100];
     char *p, *s;
     int i, j;
-    int found=0;
+    int found = 0;
 
     printf("Enter the parent string: ");
     gets(parent);
@@ -34,11 +34,8 @@ int main()
                     break;
                 }
             }
-            if (*(s + j) == '\0')
-            {
-                found = 1;
-                break;
-            }
+            found = 1;
+            break;
         }
         p++;
     }
