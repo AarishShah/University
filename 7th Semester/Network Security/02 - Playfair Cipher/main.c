@@ -57,7 +57,16 @@ void encrypt(char keytable[SIZE][SIZE], char plaintext[])
     for (int i = 0; i < length - 1; i += 2)
     {
         findPosition(keytable, plaintext[i], &row1, &col1);
-        findPosition(keytable, plaintext[i + 1], &row2, &col2);
+        if (i + 1 < length)
+        {
+            findPosition(keytable, plaintext[i + 1], &row2, &col2);
+        }
+        else
+        {
+            // Use 'X' as filler for the last unpaired character
+            findPosition(keytable, 'X', &row2, &col2);
+        }
+
         if (row1 == row2)
         {
             printf("%c%c ", keytable[row1][(col1 + 1) % SIZE], keytable[row2][(col2 + 1) % SIZE]);
@@ -98,6 +107,11 @@ int main()
                 adjustedText[index++] = 'X';
             }
         }
+    }
+    // If the length of adjustedText is odd, append 'X'
+    if (index % 2 != 0)
+    {
+        adjustedText[index++] = 'X';
     }
     adjustedText[index] = '\0'; // Null-terminate the adjusted text
 
