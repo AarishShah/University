@@ -17,7 +17,7 @@ int main()
     FILE *file = fopen("Rules.txt", "r");
     char keyword[100], line[100];
     char *fileContents = NULL;
-    size_t len = 0;
+    int len = 0;
 
     // Read and store file contents
     while (fgets(line, sizeof(line), file))
