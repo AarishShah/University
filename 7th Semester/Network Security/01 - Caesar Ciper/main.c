@@ -46,8 +46,8 @@ int main()
     printf("Enter the shift amount: ");
     scanf("%d", &shift_amount);
 
-    // caesar_cipher(input_text, shift_amount);
-    caesar_decipher(input_text, shift_amount);
+    caesar_cipher(input_text, shift_amount);
+    // caesar_decipher(input_text, shift_amount);
 
     printf("Encrypted text: %s\n", input_text);
 
