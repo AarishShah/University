@@ -14,31 +14,43 @@ void trim_newline(char *str)
 
 int main()
 {
-    FILE *file = fopen("Rules.txt", "r");
-    char keyword[100], line[100];
+    FILE *file;
+    char *filename = "Rules.txt";
+    char keyword[100];
+    char line[100];
+    int found = 0;
+
+    // Open file for reading
+    file = fopen(filename, "r");
+    if (file == NULL)
+    {
+        fprintf(stderr, "Error opening file: %s\n", filename);
+        return EXIT_FAILURE;
+    }
+
+    // Read file contents into a variable
     char *fileContents = NULL;
     size_t len = 0;
-
-    // Read and store file contents
     while (fgets(line, sizeof(line), file))
     {
-        trim_newline(line);
-        int lineLen = strlen(line);
+        trim_newline(line); // Remove newline and trailing spaces
+        size_t lineLen = strlen(line);
         fileContents = realloc(fileContents, len + lineLen + 1);
         strcpy(fileContents + len, line);
         len += lineLen;
-        fileContents[len++] = '\n'; // Add newline to separate the words
+        fileContents[len++] = '\n'; // Re-add newline character for each line
     }
+
+    // Close the file
     fclose(file);
 
-    // Get user input
+    // Prompt user for a keyword
     printf("Enter a keyword to search: ");
     scanf("%99s", keyword);
 
-    // Search for keyword
-    int found = 0;
+    // Search for the keyword in the file contents
     char *token = strtok(fileContents, "\n");
-    while (token)
+    while (token != NULL)
     {
         if (strcmp(token, keyword) == 0)
         {
@@ -48,10 +60,18 @@ int main()
         token = strtok(NULL, "\n");
     }
 
-    // Output result
-    printf(found ? "Found\n" : "Not Found\n");
+    // Output result based on search
+    if (found)
+    {
+        printf("Found\n");
+    }
+    else
+    {
+        printf("Not Found\n");
+    }
 
     // Free allocated memory
     free(fileContents);
-    return 0;
+
+    return EXIT_SUCCESS;
 }
