@@ -15,7 +15,7 @@ int main()
     {
         if (ch == ' ') // If the character is a space
         {
-            if (lastChar != ' ' && firstWordFound) // last character was space and next character is symbol then new word is found, so increment the count 
+            if (lastChar != ' ' && firstWordFound) // last character was symbol and next character is space then count the word
             {
                 count++;
                 lastCharIsSpace = true;
