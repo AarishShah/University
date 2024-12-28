@@ -2,8 +2,9 @@
 
 def var(*x):
     print(x)
-    print("Argument:" + str(len(x)))
-    print("Value of x is:", *x)
+    print("No of argument(s):" , (len(x)))
+    print("Value of x is:", x)
+    print("Value of *x is:", *x)
     print(type(x))
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     return
