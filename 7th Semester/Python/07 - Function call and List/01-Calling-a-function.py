@@ -15,7 +15,9 @@ Two types of data
         For Mutable, Python uses call by reference
 2) Immutable - Once defined it cant be changed
     int, float, tuple, String
-        For immutable, Python uses call by Value
+        For immutable, Python uses call by Value like behaviour
+
+Python always passes references to objects, but whether the original object can be modified depends on whether the object itself is mutable or immutable.
 """
 
 # Example of Call by Value
