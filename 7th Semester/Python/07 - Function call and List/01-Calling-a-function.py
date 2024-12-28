@@ -34,5 +34,8 @@ marks = [10,30,50]
 
 def CBR(Sage):
     Sage[0] = 40
+    print("the id of Sage", id(Sage))
+
 CBR(marks)
 print(marks)
+print("the id of marks", id(marks))
