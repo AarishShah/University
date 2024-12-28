@@ -1,9 +1,9 @@
 # There are five types of functions on the basis of arguments:
-# 1. Function with no arguments
-# 2. Function with fixed arguments
-# 3. Function with named arguments (keyword arguments)
-# 4. Function with default arguments
-# 5. Function with variable-length arguments
+# 1. Function call with no arguments
+# 2. Function call with fixed arguments
+# 3. Function call with named arguments (keyword arguments)
+# 4. Function call with default arguments
+# 5. Function call with variable-length arguments
 
 
 def msg():
