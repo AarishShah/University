@@ -15,3 +15,23 @@ if (a > 5):
     print("3rd Statement of first 'if'")
 
 print("This statement is independent of the 'if' conditions")
+
+'''
+if (a > 5):
+    print("1st Statement of first 'if'.")
+
+if (a > 7):
+    print("2nd Statement of first 'if' & 1st Statement of second 'if'.")
+
+if (a > 9):
+    print("1st Statement of third 'if'.")
+    print("2nd Statement of third 'if'.")
+
+if (a > 7):
+    print("3rd statement of second 'if'")
+
+if (a > 5):
+    print("3rd Statement of first 'if'")
+
+print("This statement is independent of the 'if' conditions")
+'''
