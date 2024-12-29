@@ -9,9 +9,12 @@ Handles errors gracefully if the input is invalid (e.g., division by zero or inv
 Use a dictionary to store operator-function mappings for efficiency.
 '''
 def values(string):
-    operators = ["+", "-", "*", "/"]
+    operators = ['+', '-', '*', '/']
     for o in operators:
         index = string.find(o)
+        if index == -1:
+            continue
+        
         num1 = int(string[:index])
         num2 = int(string[index+1:])
         if (index != -1):
