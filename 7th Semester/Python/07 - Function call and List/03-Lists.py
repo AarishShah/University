@@ -23,7 +23,7 @@ else:
     print(False)
 
 # List Comprehension
-list1 = [i*i for i in range(5)]
+list1 = [i*i for i in range(5)] # before 'for' keyword it is same as 'list1.append()'
 print(list1)
 
 list3 = [i*i for i in range(10) if i%2==0] # This is a list comprehension which will print the square of all the even numbers from 0 to 9
