@@ -11,6 +11,8 @@ add = lambda a, b: a + b
 
 print(add(2, 3))  # 5
 
+# Mustafa's Example
+print((lambda x, y: x * y)(10,2))
 
 # same as
 # def add(a, b): return a + b
