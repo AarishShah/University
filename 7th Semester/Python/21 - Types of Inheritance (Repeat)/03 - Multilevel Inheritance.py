@@ -16,5 +16,5 @@ class Coder (Tester):
 
 w = Coder()
 # w.finalreview()
-w.review() # will call the method from the Inherited class ie, Tester
+w.review() # will call the method from the Inherited class i.e., Tester
 w.writes()
