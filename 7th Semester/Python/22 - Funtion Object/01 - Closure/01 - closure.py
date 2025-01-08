@@ -1,4 +1,5 @@
 # closure in pyhton
+# Watch this for detailed lecture: https://youtu.be/swU3c34d2NQ?si=3pZk3UYBPsC0-1B8
 
 def outer (x):
     def inner (y):
@@ -7,6 +8,7 @@ def outer (x):
 
 o = outer(7)
 print(o) # <function outer.<locals>.inner at 0x7f3e3c3e3d08>
+# print(o.__name__) # more info for studying purposes
 z = o(3)
 print(z) # 10
 
