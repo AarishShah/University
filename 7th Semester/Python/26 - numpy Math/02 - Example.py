@@ -12,7 +12,7 @@ print("Size:", x.size)  # Number of elements
 print("Shape:", x.shape)  # Dimensions of the array
 print("Data type:", x.dtype)  # Data type of the elements
 print("Reshaped to 1x6:\n", x.reshape(1, 6))  # Reshaping the array
-print("\nFlattened array x:\n", x.flatten()) # Flattening as an alternative to reshaping when unsure of dimensions
+print("\nFlattened array x:\n", x.flatten()) # Flattening is an alternative to reshaping when unsure of dimensions
 
 # Print other arrays
 print("\nArray s:\n", s)
